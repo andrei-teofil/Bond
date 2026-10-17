@@ -1,0 +1,36 @@
+h2 {
+    background-color: cyan;
+}
+
+.class1 {
+    position: absolute;
+    background: yellow;
+    top: 0;
+    left: 50%;
+}
+
+.relative-class {
+    position: relative;
+    background: rgb(234, 156, 156);
+    top: 0;
+}
+
+.absolute-child {
+    position: absolute;
+    background: rgb(88, 248, 128);
+    top: 10px;
+    left: 50%;
+}
+
+.absolute-grandchild {
+    position: absolute;
+    background: rgb(168, 146, 255);
+    top: 0;
+    left: 50%;
+}
+
+.relative-grandchild {
+    position: relative;
+    background: rgb(255, 146, 226);
+}
+
