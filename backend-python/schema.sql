@@ -1,5 +1,7 @@
 PRAGMA foreign_keys = ON;
 
+DROP TABLE IF EXISTS users;
+
 CREATE TABLE "users" (
   "id" INTEGER PRIMARY KEY,
   "username" TEXT,
@@ -10,6 +12,8 @@ CREATE TABLE "users" (
   "password" TEXT
 );
 
+DROP TABLE IF EXISTS posts;
+
 CREATE TABLE "posts" (
   "id" INTEGER PRIMARY KEY,
   "user_id" INTEGER NOT NULL,
@@ -18,6 +22,8 @@ CREATE TABLE "posts" (
   "created_at" TEXT,
   CONSTRAINT "user_posts" FOREIGN KEY ("user_id") REFERENCES "users" ("id") DEFERRABLE INITIALLY IMMEDIATE
 );
+
+DROP TABLE IF EXISTS comments;
 
 CREATE TABLE "comments" (
   "id" INTEGER PRIMARY KEY,
