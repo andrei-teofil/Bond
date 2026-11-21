@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, request, jsonify
+from flask import Flask, redirect, url_for
 import os
 import db_manager
 from constants import DB_FILE 
@@ -20,5 +20,13 @@ app.url_map.strict_slashes = False
 @app.route("/health")
 def health():
     return "Running!"
+
+@app.route("/")
+def home():
+    return redirect(url_for("api"))
+
+@app.route("/api")
+def api():
+    return "Bond API"
 
 app.register_blueprint(users_bp, url_prefix="/api/users")
