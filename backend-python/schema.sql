@@ -42,9 +42,9 @@ INSERT INTO "users" ("id", "username", "first_name", "last_name", "date_of_birth
 VALUES (0, 'mihai-p', 'Mihai', 'Panescu', '2009-10-31', 'example@email.com', '1234');
 
 INSERT INTO "users" ("id", "username", "first_name", "last_name", "date_of_birth", "email", "password")
-VALUES (1, 'sebi-c', 'Sebastian', 'Crigan', '2011-12-14', 'example@email.com', '1234');
+VALUES (1, 'sebi-c', 'Sebastian', 'Crigan', '2011-12-14', 'example55@email.com', '1234');
 
 INSERT INTO "users" ("id", "username", "first_name", "last_name", "date_of_birth", "email", "password")
-VALUES (2, 'seba-z', 'Seba', 'Zavu', '2012-02-09', 'example@email.com', '1234');
+VALUES (2, 'seba-z', 'Seba', 'Zavu', '2012-02-09', 'example89@email.com', '1234');
 
 COMMIT;

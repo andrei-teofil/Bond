@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 import os
 import db_manager
 from constants import DB_FILE 
+from routes.users import users_bp
 
 app = Flask(__name__)
 
@@ -19,3 +20,5 @@ app.url_map.strict_slashes = False
 @app.route("/health")
 def health():
     return "Running!"
+
+app.register_blueprint(users_bp, url_prefix="/api/users")
